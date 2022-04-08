@@ -1,0 +1,27 @@
+//* program for finding vowels,words and consonants* //
+#include<iostream>
+#include<string>
+using namespace std;
+int main()
+{
+string str="my favOurite player is CristIano RonaLdo";
+int vowels=0,consonants=0,spaces=0;
+for (int i=0;str[i]!=0;i++)
+{
+
+if(str[i]=='A' ||  str[i]=='E' || str[i]=='I' || str[i]=='O' || str[i]=='U' ||
+   str[i]=='a' || str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u')
+   vowels++;
+  
+    else if(str[i]== ' ')
+    spaces++;
+    
+    else 
+     consonants++;
+}
+    cout<<"Vowels are:"<<vowels<<endl;
+    cout<<"Words are:"<<spaces+1<<endl;
+    cout<<"Consonants are:"<<consonants<<endl;
+
+    return 0;
+}
